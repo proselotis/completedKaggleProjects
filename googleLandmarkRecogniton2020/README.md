@@ -8,7 +8,6 @@ Things that worked:
 - Tuning submission score only to ransac methods and not similarity measurements with all other photos
 - Using Minkowski distance metric over cosine or others provided by sci-kit learn 
 - Random sampling image classes to remove extra photos that describe same details from previous photos
-- 
 
 
 Things that didn't work:
