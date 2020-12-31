@@ -1,6 +1,6 @@
 ## Links:
 - [Competition](https://www.kaggle.com/c/jane-street-market-prediction/overview)
-- [Leaderboard, finished 63th out of 736](https://www.kaggle.com/c/jane-street-market-prediction/leaderboard)
+- [Leaderboard](https://www.kaggle.com/c/jane-street-market-prediction/leaderboard)
 
 
 
