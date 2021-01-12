@@ -14,3 +14,7 @@
 ## Ideas that didn't get implemented:
 - 
 
+## Things that people implemented to overfit:
+- Removing all days before date 85 
+- Removing all high frequency trading days
+- Removing all data with no weight 
