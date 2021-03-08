@@ -17,6 +17,7 @@ Since this competition's results are ongoing until August 21 2021 I will not be 
 
 ## Ideas that didn't get implemented:
 - [Feature neutrlization](https://www.kaggle.com/code1110/janestreet-avoid-overfit-feature-neutralization): I played around with this idea but couldn't get it into my code functionally and with the time contrainsts of the project. 
+- [mixup](https://arxiv.org/pdf/1710.09412.pdf): A user [posted](https://www.kaggle.com/c/jane-street-market-prediction/discussion/224333) about this interesting technique shortly after the end of the competition. 
 
 ## Things that people implemented to overfit:
 - Removing all days before date 85 
