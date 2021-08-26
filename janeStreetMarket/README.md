@@ -2,12 +2,15 @@ Since this competition's results are ongoing until August 21 2021 I will not be 
 
 ## Links:
 - [Competition](https://www.kaggle.com/c/jane-street-market-prediction/overview)
-- [Leaderboard](https://www.kaggle.com/c/jane-street-market-prediction/leaderboard)
+- [Leaderboard finished 91st out of 4,245](https://www.kaggle.com/c/jane-street-market-prediction/leaderboard)
 
 
 
 ## Things that worked:
-- Discussion of these to come when the competition ends (August 21 2021) 
+- Splitting on binary variables to fit different distributions, in particular there was one variable that had the best split and then i built an ensemble of various models off of each split that summed to my prediction
+- Including an autoencoder as well as the regular inputs as inputs into the model
+- Count of how many feature in each "feature group" were null as to better understand where the data originated from 
+- average summing of two models over median of three for each different ensemble
 
 
 ## Things that didn't work:
@@ -19,7 +22,7 @@ Since this competition's results are ongoing until August 21 2021 I will not be 
 - [Feature neutrlization](https://www.kaggle.com/code1110/janestreet-avoid-overfit-feature-neutralization): I played around with this idea but couldn't get it into my code functionally and with the time contrainsts of the project. 
 - [mixup](https://arxiv.org/pdf/1710.09412.pdf): A user [posted](https://www.kaggle.com/c/jane-street-market-prediction/discussion/224333) about this interesting technique shortly after the end of the competition. 
 
-## Things that people implemented to overfit:
+## Things that other people implemented to overfit:
 - Removing all days before date 85 
 - Removing all high frequency trading days
 - Removing all data with no weight 
