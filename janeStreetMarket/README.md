@@ -1,4 +1,5 @@
-Since this competition's results are ongoing until August 21 2021 I will not be discussing my successes or model strategy until after then. 
+##
+Overall model contains feature creation, that is then fed into an autoencoder and outputs are combined with the origignal inputs and fed into a differing set of ensembles, depending on the distribution and characteristics of the row that is fed in. Each ensemble contains two or three models (for ease of compute time) and ensembles are taken the average or median of depending on the ensemlbe and results are submitted. Due to time constraints I was not able to combine multiple sets of ensembles or create an ensemble greater than 3. 
 
 ## Links:
 - [Competition](https://www.kaggle.com/c/jane-street-market-prediction/overview)
