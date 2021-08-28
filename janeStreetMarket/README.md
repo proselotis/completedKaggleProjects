@@ -3,7 +3,7 @@ Overall model contains feature creation, that is then fed into an autoencoder an
 
 ## Links:
 - [Competition](https://www.kaggle.com/c/jane-street-market-prediction/overview)
-- [Leaderboard finished 91st out of 4,245](https://www.kaggle.com/c/jane-street-market-prediction/leaderboard)
+- [Leaderboard finished 84th out of 4,245](https://www.kaggle.com/c/jane-street-market-prediction/leaderboard)
 
 
 
