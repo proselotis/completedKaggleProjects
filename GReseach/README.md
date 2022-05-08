@@ -26,29 +26,27 @@ If all the data is complete that means there would be 14 rows per minute (this i
 Many contestants used a purged group time series split (https://www.kaggle.com/yamqwe/bottleneck-encoder-mlp-keras-tuner) 
 This CV excels in time series data because it splits the data into equal groups based on how many days are available, then it provides a gap between the train data and the test data in order to prevent data leakage. 
 
-[pruged_cv](images/purged_group_split.png)
+![](images/purged_group_split.png)
 
 Upon a close look at the data, many of the days across various coins do not have an equal amount of observations per period, thus this causes a major problem for this cross validation strategy to apply to our data: 
 
-[pruged_cv](images/Binance Coin.png)
-[pruged_cv](images/Bitcoin.png)
-[pruged_cv](images/Bitcoin Cash.png)
-[pruged_cv](images/Cardano.png)
-[pruged_cv](images/Dogeoin.png)
-[pruged_cv](images/eos.png)
-[pruged_cv](images/Ethereum.png)
-[pruged_cv](images/Ethereum Classic.png)
-[pruged_cv](images/IOTA.png)
-[pruged_cv](images/Litecoin.png)
-[pruged_cv](images/Maker.png)
-[pruged_cv](images/Monero.png)
-[pruged_cv](images/Stellar.png)
-[pruged_cv](images/TRON.png)
+<img align="left" width="300" height="300" src="images/Binance Coin.png">
+<img align="left" width="300" height="300" src="images/Bitcoin.png">
+<img align="left" width="300" height="300" src="images/Bitcoin Cash.png">
+<img align="left" width="300" height="300" src="images/Cardano.png">
+<img align="left" width="300" height="300" src="images/Dogecoin.png">
+<img align="left" width="300" height="300" src="images/eos.png">
+<img align="left" width="300" height="300" src="images/Ethereum.png">
+<img align="left" width="300" height="300" src="images/Ethereum Classic.png">
+<img align="left" width="300" height="300" src="images/IOTA.png">
+<img align="left" width="300" height="300" src="images/Litecoin.png">
+<img align="left" width="300" height="300" src="images/Maker.png">
+<img align="left" width="300" height="300" src="images/Monero.png">
+<img align="left" width="300" height="300" src="images/Stellar.png">
+<img  width="300" height="300" src="images/TRON.png">
 
 
 Coins like Maker, Monero, IOTA and doge would really struggle with this underlying cross validation strategy. Thus we wrote our own CV that did not split on days but instead collected the desired number of test windows, test window size, and gap, starting from the final data observations, and then used the remaining number of observations within the data to split into equal groups. This strategy seemed fair to us and we used a 3 fold validation, thus giving each fold around a year’s worth of data. A key reason this strategy seemed fair is because the identification of an individual day is not important to use in this category for training, for testing we tested on a 90 day window (5 days of data was used as an embargo to avoid any leakage, and then tested on the following 85 days for assessment)
-
-
 
 # Feature Engineering:
  
