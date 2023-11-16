@@ -1,6 +1,6 @@
 # Links
 - [Competition](https://www.kaggle.com/competitions/ai-village-capture-the-flag-defcon31)
-- [Leaderboard](https://www.kaggle.com/competitions/ai-village-capture-the-flag-defcon31/leaderboard) finished 132rd out of 1,360.
+- [Leaderboard](https://www.kaggle.com/competitions/ai-village-capture-the-flag-defcon31/leaderboard) finished 129th out of 1,344.
 
 # Comments
 This competition is very different from others I have done on Kaggle, less data science and more an overlap with computer science, hacking, and ML models. I really enjoyed it but unfortunately I only got to work dedicated to it for 2 weeks out of the total 4 weeks. 
